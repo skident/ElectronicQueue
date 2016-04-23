@@ -15,7 +15,7 @@ int main()
         file >> clientsNum; // read clients count
         file >> windowsNum; // read windows count
 
-        cout << "Clients: " << clientsNum << " WIndows: " << windowsNum << endl;
+//        cout << "Clients: " << clientsNum << " WIndows: " << windowsNum << endl;
 
         Bank bank(windowsNum);
         for (int i = 0; i < clientsNum; i++)
@@ -25,7 +25,7 @@ int main()
 
             file >> arriveTime;
             file >> serviceTime;
-            cout << "Client #0: " << arriveTime<< " | " << serviceTime << endl;
+//            cout << "Client #0: " << arriveTime<< " | " << serviceTime << endl;
             bank.addClient(arriveTime, serviceTime);
         }
 
